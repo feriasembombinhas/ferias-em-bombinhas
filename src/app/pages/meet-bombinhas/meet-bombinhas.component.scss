@@ -1,0 +1,216 @@
+@import "../../../scss/variables";
+
+.content {
+  background-color: $background;
+  padding-bottom: 32px;
+
+  .color-blue {
+    color: $blue-2;
+  }
+
+  .color-orange {
+    color: $orange-1;
+  }
+
+  .color-yellow {
+    color: $yellow;
+  }
+
+  h2 {
+    color: $blue-1;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &>div {
+    padding: 32px;
+    max-width: 1100px;
+    min-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 80px;
+
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+
+
+
+      .card {
+        padding: 32px;
+        border-radius: 16px;
+        border: none;
+        box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+
+        h3 {
+          color: #F16136;
+          text-align: center;
+        }
+
+        p {
+          color: #374151;
+        }
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // 3 colunas
+        grid-template-rows: repeat(2, auto); // 2 linhas
+        gap: 20px;
+
+        .card {
+          text-align: center;
+
+          &>div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+
+            i {
+              font-size: 36px;
+            }
+
+            h4 {
+              font-size: 20px;
+            }
+          }
+
+        }
+      }
+    }
+
+    .natural-beauties {
+      display: flex;
+      gap: 48px;
+
+      .imgs {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        max-width: 50%;
+
+        img {
+          border-radius: 16px;
+          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.103);
+          border: 1px solid #E5E7EB;
+          max-height: 250px;
+        }
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        justify-content: center;
+
+        h2 {
+          text-align: left;
+        }
+
+        p {
+          color: #374151;
+        }
+      }
+    }
+
+    .curiosities-tips {
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+
+      .cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        .card {
+          padding: 24px;
+          border: none;
+          border-left: 4px solid black;
+          border-radius: 12px;
+          gap: 15px;
+
+          h3 {
+            font-size: 16px;
+            font-weight: bold;
+            color: $blue-1;
+          }
+
+          p {
+            color: #4B5563;
+            font-size: 16px;
+          }
+        }
+
+        .card-orange {
+          border-left: 4px solid $orange-1;
+        }
+
+        .card-blue {
+          border-left: 4px solid $blue-2;
+        }
+
+        .card-yellow {
+          border-left: 4px solid $yellow;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1100px) {
+  .content {
+    &>div {
+      max-width: none;
+      min-width: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .content {
+    &>div {
+      padding: 16px;
+      max-width: none;
+      min-width: 0 !important;
+
+      .section {
+        .cards {
+          grid-template-columns: repeat(1, 1fr); // tudo em uma linha
+          grid-template-rows: 1fr;
+          overflow-x: auto; // permite scroll lateral
+
+        }
+      }
+
+      .natural-beauties {
+        flex-direction: column;
+
+        .imgs {
+          max-width: none;
+        }
+      }
+
+      .curiosities-tips {
+        gap: 32px;
+
+        .cards {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+<div class="content">
+  <div class="title">
+    <div class="apt-name">
+      <h1>
+        {{realEstate?.name}}
+      </h1>
+    </div>
+    <div class="icons">
+      <div class="icon-data">
+        <i class="fa-solid fa-location-dot blue-1"></i> {{realEstate?.details?.local}}
+      </div>
+      <div class="icon-data">
+        <i class="fa-solid fa-bed orange-1"></i> {{getRoomsText()}}
+      </div>
+      <div class="icon-data">
+        <i class="fa-solid fa-bath blue-2"></i> {{getBathroomsText()}}
+      </div>
+      <div class="icon-data">
+        <i class="fa-solid fa-user orange-2"></i> {{getPeoplesText()}}
+      </div>
+    </div>
+  </div>
+  <div class="informations">
+    <div class="description-1 card">
+      <div class="card-title">
+        <i class="fa-solid fa-bars-staggered icon-1"></i>
+        <h2>Descrição</h2>
+      </div>
+      <div class="description-data">
+        <p>
+          {{realEstate?.description1}}
+        </p>
+        <p>
+          {{realEstate?.description2}}
+        </p>
+      </div>
+    </div>
+    <div class="location card">
+      <div class="card-title">
+        <i class="fa-solid fa-map-location-dot icon-2"></i>
+        <h2>Localização</h2>
+      </div>
+      <div class="location-content">
+        <div class="Address">
+          <p>{{ realEstate?.location }}</p>
+        </div>
+        <div class="map">
+          <iframe width="100%" height="300" style="border:0; border-radius:12px;" loading="lazy" allowfullscreen
+            [src]="mapUrl">
+          </iframe>
+        </div>
+      </div>
+      <div class="contact">
+        <a [href]="getWhatsAppLink(realEstate?.name)"
+          target="_blank">
+          <button>
+            <i class="fa-brands fa-whatsapp"></i>
+            Entrar em contato
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="offers card">
+      <div class="card-title">
+        <i class="fa-solid fa-star icon-3"></i>
+        <h2>O que oferece</h2>
+      </div>
+      <div class="offers-content">
+        <div class="offers-data" *ngFor="let item of realEstate?.finds; let i = index">
+          <i [ngClass]="[item.icon, item.color]"></i>
+          <p>{{ item.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="important-informations">
+    <div class="important-informations-card">
+      <div class="important-informations-title">
+        <i class="fa-solid fa-circle-info"></i>
+        <h2> Informações importantes</h2>
+      </div>
+      <div class="important-informations-contet">
+        <div class="roles-real-estate section">
+          <div class="section-title">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <h3> Regras do imóvel</h3>
+          </div>
+          <div class="section-content">
+            <div class="role">
+              <i class="fa fa-check"></i>
+              Horário de Check-in: 14h até 24h 
+            </div>
+            <div class="role">
+              <i class="fa fa-check"></i>
+              Horário de check-out: 05h ate as 10h
+            </div>
+            <div class="role">
+              <i class="fa fa-check"></i>
+              Festas e eventos não são permitidos
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

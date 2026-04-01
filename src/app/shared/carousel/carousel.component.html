@@ -1,0 +1,29 @@
+<div id="carouselExample" class="carousel slide meu-carousel" data-bs-ride="carousel">
+
+  <!-- Indicadores -->
+  <div class="carousel-indicators">
+    <button *ngFor="let group of groupedImages; let i = index" type="button" data-bs-target="#carouselExample"
+      [attr.data-bs-slide-to]="i" [class.active]="i === 0">
+    </button>
+  </div>
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div *ngFor="let group of groupedImages; let i = index" class="carousel-item" [class.active]="i === 0">
+      <div class="d-flex">
+        <div *ngFor="let image of group" class="flex-fill p-1">
+          <img [src]="image" class="d-block w-100 carousel-img" [ngClass]="{ 'animation-zoom': zoom }">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controles -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>

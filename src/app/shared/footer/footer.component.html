@@ -1,0 +1,58 @@
+<footer>
+  <div class="informations">
+    <div class="about">
+      <img src="assets/logos/logo-1.svg" alt="Logo Férias em Bombinhas.com.br">
+      <div class="description">
+        <p>
+          Proporcionando experiências inesquecíveis em uma das
+          praias mais belas de Santa Catarina desde 2012.
+        </p>
+      </div>
+    </div>
+
+    <div class="sections">
+      <div class="contact section">
+        <h2>Contato</h2>
+        <div class="info">
+          <div class="data">
+            <i class="fa-solid fa-phone"></i>
+            <p>+55 47 99790 3305</p>
+          </div>
+          <div class="data">
+            <i class="fa-solid fa-envelope"></i>
+            <p>feriasembombinhas&#64;hotmail.com</p>
+          </div>
+          <div class="data">
+            <i class="fa-brands fa-instagram"></i>
+            <p>&#64;feriasembombinhass</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="links section">
+        <h2>Links Rápidos</h2>
+        <div class="info">
+          <div class="data">
+            <a [routerLink]="['/imoveis']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+              Imóveis
+            </a>
+          </div>
+          <div class="data">
+            <a [routerLink]="['/conheca-bombinhas']" [routerLinkActive]="['active']">
+              Conheça Bombinhas
+            </a>
+          </div>
+          <div class="data">
+            <a [routerLink]="['/informacoes']" [routerLinkActive]="['active']">
+              Informações
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copywriting">
+    <i class="fa-regular fa-copyright"></i>
+    <p>2012 - João Residencial. Todos os direitos reservados.</p>
+  </div>
+</footer>

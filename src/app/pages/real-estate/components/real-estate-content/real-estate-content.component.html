@@ -1,0 +1,119 @@
+<div class="content">
+  <div class="title">
+    <h1>Nossos Imóveis</h1>
+    <p>Conforto e localização privilegiada para suas férias</p>
+  </div>
+
+  <div class="cards">
+    @for (item of realEstates; track item.slug; let i = $index) {
+      <div
+        class="card"
+        #fadeItem
+        [@fadeInUp]="{
+          value: getState(fadeItem),
+          params: { delay: 750 + (i % 3) * 200 }
+        }"
+      >
+        <div class="img-card">
+          <img [src]="item.imgCapa" [alt]="'imagem apartamento ' + item.name">
+        </div>
+
+        <div class="data-card">
+          <div class="name-card">
+            <h3>{{ item.name }}</h3>
+          </div>
+
+          <div class="icons-card">
+            <div class="icon-data">
+              <i class="fa-solid fa-location-dot"></i> {{ item.details.local }}
+            </div>
+
+            <div class="icon-data">
+              <i class="fa-solid fa-bed"></i>
+              {{ item.details.rooms > 1
+                ? item.details.rooms + ' quartos'
+                : item.details.rooms + ' quarto' }}
+            </div>
+
+            <div class="icon-data">
+              <i class="fa-solid fa-bath"></i>
+              {{ item.details.bathrooms > 1
+                ? item.details.bathrooms + ' banheiros'
+                : item.details.bathrooms + ' banheiro' }}
+            </div>
+
+            <div class="icon-data">
+              <i class="fa-solid fa-user"></i>
+              {{ item.details.peoples > 1
+                ? item.details.peoples + ' pessoas'
+                : item.details.peoples + ' pessoa' }}
+            </div>
+          </div>
+
+          <div class="buttons-card">
+            <a [href]="getWhatsAppLink(item.name)" target="_blank">
+              <button class="btn btn-primary">Reservar Agora</button>
+            </a>
+
+            <a [routerLink]="['/imovel', item.slug]">
+              <button class="btn btn-secondary">Ver Mais Sobre</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="contact">
+    <h2>Pronto para suas férias dos sonhos?</h2>
+    <p>Entre em contato conosco e reserve agora sua estadia em Bombinhas</p>
+
+    <div class="contacts">
+      <div class="section">
+        <div class="icon whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="content-section">
+          <div class="title-section">Chame agora</div>
+          <div class="data-section">+55 47 99790 3305</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="icon email">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="content-section">
+          <div class="title-section">Envie um e-mail</div>
+          <div class="data-section">
+            feriasembombinhas&#64;hotmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="icon instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="content-section">
+          <div class="title-section">Siga no Instagram</div>
+          <div class="data-section">
+            &#64;feriasembombinhass
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reserva">
+      <a
+        href="https://wa.me/5547997903305?text=Ol%C3%A1,%20tudo%20certo?%20Vim%20pelo%20site%20e%20quero%20fazer%20a%20reserva%20de%20um%20im%C3%B3vel"
+        target="_blank"
+      >
+        <button>
+          <i class="fa-brands fa-whatsapp"></i>
+          Fazer Reserva Agora
+        </button>
+      </a>
+    </div>
+  </div>
+</div>

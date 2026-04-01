@@ -1,0 +1,55 @@
+@import "../../../scss/variables";
+
+.navbar {
+  background-color: $blue-1 !important;
+  padding: 0 32px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.nav-link {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: $orange-2;
+  }
+}
+
+.active {
+  color: $orange-1 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+
+  outline: none !important;
+  box-shadow: none !important;
+
+}
+
+
+.navbar-toggler {
+  filter: invert(1);
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 10px;
+  }
+
+  .nav-link {
+    margin: 5px 2.5px;
+  }
+
+  .navbar-brand img {
+    width: 125px !important;
+  }
+}
