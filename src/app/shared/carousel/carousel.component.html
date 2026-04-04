@@ -9,10 +9,26 @@
   <!-- Slides -->
   <div class="carousel-inner">
     <div *ngFor="let group of groupedImages; let i = index" class="carousel-item" [class.active]="i === 0">
+
       <div class="d-flex">
+
         <div *ngFor="let image of group" class="flex-fill p-1">
-          <img [src]="image" class="d-block w-100 carousel-img" [ngClass]="{ 'animation-zoom': zoom }">
+          <div class="img-wrapper">
+
+            <!-- Fundo borrado -->
+            <div *ngIf="blur" class="img-bg" [ngStyle]="{ 'background-image': 'url(' + image + ')' }">
+            </div>
+
+            <!-- Imagem -->
+            <img [src]="image" class="img-front" [ngClass]="{
+              'animation-zoom': zoom,
+              'img-cover': !blur,
+              'img-contain': blur
+            }" />
+
+          </div>
         </div>
+
       </div>
     </div>
   </div>

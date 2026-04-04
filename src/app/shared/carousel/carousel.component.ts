@@ -12,6 +12,7 @@ export class CarouselComponent implements OnInit {
   @Input() updateItemPerSlide: boolean = false;
   @Input() zoom: boolean = true;
   @Input() images: Array<string> | undefined = [''];
+  @Input() blur: boolean = false;
 
   itemsPerSlide = 1;
 
