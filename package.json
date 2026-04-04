@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npx ng build",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -17,9 +17,7 @@
     "@angular/forms": "^17.3.0",
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
-    "@angular/platform-server": "^17.3.0",
     "@angular/router": "^17.3.0",
-    "@angular/ssr": "^17.3.17",
     "@fortawesome/fontawesome-free": "^7.2.0",
     "bootstrap": "^5.3.8",
     "rxjs": "~7.8.0",
