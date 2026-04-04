@@ -47,6 +47,8 @@ export class PropertyContentComponent {
   }
 
   setSEO() {
+    if (!this.isBrowser) return;
+
     const name = this.realEstate?.name || '';
     const location = this.realEstate?.details?.local || '';
     const rooms = this.getRoomsText();
@@ -65,17 +67,16 @@ export class PropertyContentComponent {
     });
   }
 
-
   ngOnChanges() {
 
-    if (this.realEstate?.cords) {
+    if (this.realEstate?.cords && this.isBrowser) {
       this.mapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
         `https://www.google.com/maps?q=${this.realEstate.cords.lat},${this.realEstate.cords.lon}&output=embed`
       );
     }
 
     if (this.realEstate?.finds) {
-      this.generatedColors = this.generateColors(this.realEstate?.finds.length);
+      this.generatedColors = this.generateColors(this.realEstate.finds.length);
     }
 
     if (this.realEstate) {
