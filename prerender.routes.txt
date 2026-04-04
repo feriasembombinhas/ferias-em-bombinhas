@@ -1,0 +1,10 @@
+/imoveis
+/conheca-bombinhas
+/informacoes
+/imovel/varandas-sol-bombinhas
+/imovel/apartamento-doce-sol
+/imovel/apartamento-doce-mar
+/imovel/apartamento-01-residencial-ferias-em-bombinhas
+/imovel/apartamento-duplex-02-residencial-ferias-em-bombinhas
+/imovel/apartamento-duplex-03-ou-04-residencial-ferias-em-bombinhas
+/imovel/apartamento-101-102-residencial-ferias-em-bombinhas

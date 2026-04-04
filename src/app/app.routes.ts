@@ -10,4 +10,4 @@ export const routes: Routes = [
   { path: 'informacoes', component: InformationsComponent },
   { path: 'imovel/:slug', component: PropertyComponent },
   { path: '', redirectTo: 'imoveis', pathMatch: 'full' }
-];;
+];
