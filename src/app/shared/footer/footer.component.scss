@@ -14,7 +14,7 @@ footer {
     display: flex;
     gap: 41px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
     width: 100%;
 
@@ -44,7 +44,6 @@ footer {
       display: flex;
       gap: 100px;
       flex-wrap: wrap;
-      flex: 1;
 
       .section {
         display: flex;
@@ -85,6 +84,14 @@ footer {
     border-top: 1px solid #374151;
     padding-top: 32px;
 
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    .informations {
+      justify-content: flex-start;
+    }
   }
 }
 
