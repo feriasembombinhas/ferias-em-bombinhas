@@ -1,0 +1,27 @@
+# Férias em Bombinhas
+
+O Férias em Bombinhas é um site de aluguel de temporada em Bombinhas, Santa Catarina, Brasil.
+
+O site apresenta apartamentos e casas para aluguel, informações sobre Bombinhas e conteúdos para auxiliar turistas a escolher a melhor hospedagem.
+
+## Páginas principais
+
+- https://ferias-em-bombinhas.vercel.app/
+- https://ferias-em-bombinhas.vercel.app/imoveis
+- https://ferias-em-bombinhas.vercel.app/conheca-bombinhas
+- https://ferias-em-bombinhas.vercel.app/informacoes
+
+## Imóveis
+
+- https://ferias-em-bombinhas.vercel.app/imovel/varandas-sol-bombinhas
+- https://ferias-em-bombinhas.vercel.app/imovel/apartamento-doce-sol
+- https://ferias-em-bombinhas.vercel.app/imovel/apartamento-doce-mar
+- https://ferias-em-bombinhas.vercel.app/imovel/apartamento-01-residencial-ferias-em-bombinhas
+- https://ferias-em-bombinhas.vercel.app/imovel/apartamento-duplex-02-residencial-ferias-em-bombinhas
+- https://ferias-em-bombinhas.vercel.app/imovel/apartamento-duplex-03-ou-04-residencial-ferias-em-bombinhas
+- https://ferias-em-bombinhas.vercel.app/imovel/apartamento-101-102-residencial-ferias-em-bombinhas
+
+## Contato
+
+Site oficial:
+https://ferias-em-bombinhas.vercel.app/

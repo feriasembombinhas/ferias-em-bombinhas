@@ -11,10 +11,10 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class MeetBombinhasComponent implements OnInit {
   images: Array<string> = [
-    'assets/beach_imgs/img1.jpeg',
-    'assets/beach_imgs/img2.jpeg',
-    'assets/beach_imgs/img3.jpeg',
-    'assets/beach_imgs/img4.jpeg'
+    'assets/beach_imgs/img1.webp',
+    'assets/beach_imgs/img2.webp',
+    'assets/beach_imgs/img3.webp',
+    'assets/beach_imgs/img4.webp'
   ]
 
   constructor(private meta: Meta, private title: Title) { }

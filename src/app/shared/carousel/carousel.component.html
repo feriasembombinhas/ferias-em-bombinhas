@@ -20,7 +20,7 @@
             </div>
 
             <!-- Imagem -->
-            <img [src]="image" class="img-front" [ngClass]="{
+            <img [src]="image" class="img-front" fetchpriority="high" priority [ngClass]="{
               'animation-zoom': zoom,
               'img-cover': !blur,
               'img-contain': blur

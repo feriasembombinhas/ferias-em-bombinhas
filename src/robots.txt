@@ -1,0 +1,8 @@
+# robots.txt - Férias em Bombinhas
+# https://ferias-em-bombinhas.vercel.app
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ferias-em-bombinhas.vercel.app/sitemap.xml
