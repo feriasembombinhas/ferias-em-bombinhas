@@ -34,16 +34,7 @@ export class PropertyContentComponent {
       window.scrollTo(0, 0);
     }
 
-    if (this.isBrowser) {
-      const lat = this.realEstate?.cords?.lat;
-      const lon = this.realEstate?.cords?.lon;
-
-      if (lat && lon) {
-        this.mapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-          `https://www.google.com/maps?q=${lat},${lon}&output=embed`
-        );
-      }
-    }
+    this.updateMapUrl();
   }
 
   setSEO() {
@@ -67,21 +58,39 @@ export class PropertyContentComponent {
     });
   }
 
-  ngOnChanges() {
+  ngOnChanges(): void {
+    this.updateMapUrl();
 
-    if (this.realEstate?.cords && this.isBrowser) {
-      this.mapUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-        `https://www.google.com/maps?q=${this.realEstate.cords.lat},${this.realEstate.cords.lon}&output=embed`
+    if (this.realEstate?.finds) {
+      this.generatedColors = this.generateColors(
+        this.realEstate.finds.length
       );
     }
 
-    if (this.realEstate?.finds) {
-      this.generatedColors = this.generateColors(this.realEstate.finds.length);
-    }
-
-    if (this.realEstate) {
+    if (this.realEstate && this.isBrowser) {
       this.setSEO();
     }
+  }
+
+  private updateMapUrl(): void {
+    const lat = this.realEstate?.cords?.lat;
+    const lon = this.realEstate?.cords?.lon;
+
+    if (
+      lat == null ||
+      lon == null ||
+      !Number.isFinite(Number(lat)) ||
+      !Number.isFinite(Number(lon))
+    ) {
+      this.mapUrl = undefined as unknown as SafeResourceUrl;
+      return;
+    }
+
+    const url =
+      `https://www.google.com/maps?q=${lat},${lon}&output=embed`;
+
+    this.mapUrl =
+      this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
   getRoomsText(): string {

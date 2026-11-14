@@ -18,7 +18,13 @@ export class RealEstateService {
         bathrooms: 1,
         peoples: 3
       },
-      description1: "Nossos sobrados de 1 dormitório são perfeitos para casais ou pequenas famílias, acomodando até 3 pessoas com todo o conforto necessário para dias de descanso.",
+      description1: `Nossos sobrados de 01 dormitório são perfeitos para casais ou pequenas famílias, acomodando até 03 pessoas, com o conforto necessário para dias de descanso. As acomodações contam com cozinha, banheiro, ar-condicionado e tv no dormitório.
+
+      O residencial dispõe ainda de estacionamento fechado, lavanderia e churrasqueira de uso coletivo.
+
+      A apenas 400 metros da praia, você pode aproveitar o melhor de Bombinhas, caminhar até o mar, apreciar a natureza, explorar as praias e relaxar no seu próprio ritmo.
+
+      Estamos localizados no centro de Bombinhas, próximos de mercado, farmácias, restaurantes e do comércio em geral.`,
       finds: [
         { text: "Cozinha equipada", icon: "fa-solid fa-utensils", color: "color-2" },
         { text: "Dormitório com TV e ar condicionado", icon: "fa-solid fa-bed", color: "color-1" },
@@ -28,9 +34,7 @@ export class RealEstateService {
         { text: "Área de churrasco coletiva", icon: "fa-solid fa-fire", color: "color-2" },
         { text: "Estacionamento fechado", icon: "fa-solid fa-square-parking", color: "color-1" }
       ],
-      description2: `A apenas 400 metros da praia, você pode aproveitar o melhor de Bombinhas: caminhar até o mar, curtir a natureza, explorar as praias e relaxar no seu próprio ritmo. Estamos localizados no centro de Bombinhas, próximos de mercado, farmácias, restaurantes e do comercio em geral.
-
-Aqui, você vive o sol, a brisa e a verdadeira essência do litoral catarinense. `,
+      description2: ``,
       location: "Rua Pescada Amarela, 401 - Centro",
       cords: {
         lat: "-27.1526106377652",
@@ -68,12 +72,19 @@ Aqui, você vive o sol, a brisa e a verdadeira essência do litoral catarinense.
         bathrooms: 1,
         peoples: 6
       },
-      description1: `Localizado na avenida principal de Bombinhas, em cima da tradicional Sorveteria Seu João, o Apartamento Doce Sol oferece praticidade, conforto e uma experiência única a apenas 50 metros da praia.
+      description1: `Para quem quer ficar pertinho do mar no coração de Bombinhas, o apartamento Doce Sol é uma excelente escolha.
 
-Com 2 dormitórios e capacidade para até 6 pessoas, é ideal para famílias ou pequenos grupos que desejam ficar perto de tudo: restaurantes, comércios, lojas e do mar. `,
+      Localizado na avenida principal, a apenas 50 metros da Praia de Bombinhas e sobre a tradicional Sorveteria Seu João, o apartamento possui dois dormitórios climatizados e acomoda até 06 pessoas.
+
+      Conta com cozinha, sala, banheiro, churrasqueira, lavanderia individual e Wi-Fi, oferece toda praticidade necessária para aproveitar as férias em família.
+
+      Por estar no centro, fica próximo a mercado, restaurantes, lojas e todo comércio em geral.
+
+      A acomodação também conta com garagem fechada e segura, localizada a aproximadamente 400 metros do apartamento, no residencial Varandas do Sol.
+      `,
       finds: [
         { text: "2 dormitórios climatizados", icon: "fa-solid fa-bed", color: "color-1" },
-        { text: "Cozinha completa", icon: "fa-solid fa-utensils", color: "color-2" },
+        { text: "Cozinha equipada", icon: "fa-solid fa-utensils", color: "color-2" },
         { text: "Sala aconchegante", icon: "fa-solid fa-couch", color: "color-3" },
         { text: "Banheiro privativo", icon: "fa-solid fa-bath", color: "color-1" },
         { text: "Lavanderia individual", icon: "fa-solid fa-shirt", color: "color-1" },
@@ -81,9 +92,7 @@ Com 2 dormitórios e capacidade para até 6 pessoas, é ideal para famílias ou 
         { text: "Wi-Fi", icon: "fa-solid fa-wifi", color: "color-3" },
         { text: "Garagem fechada", icon: "fa-solid fa-square-parking", color: "color-1" }
       ],
-      description2: `A acomodação conta ainda com garagem fechada e segura, localizada a 400 metros do apartamento, em outro imóvel da família, no residencial Varandas do sol Bombinhas.
-
-Perfeito para quem busca comodidade, excelente localização e dias inesquecíveis em Bombinhas. `,
+      description2: ``,
       location: "Av. Vereador Manoel José dos Santos, 1107 - Centro",
       cords: {
         lat: "-27.149445339353658",
@@ -117,9 +126,16 @@ Perfeito para quem busca comodidade, excelente localização e dias inesquecíve
         bathrooms: 1,
         peoples: 5
       },
-      description1: `Localizado na avenida principal de Bombinhas, em cima da tradicional Sorveteria Seu João, o Apartamento Doce Mar oferece praticidade, conforto e uma experiência única a apenas 50 metros da praia.
+      description1: `A poucos passos do mar, o apartamento Doce Mar reúne localização privilegiada, conforto e praticidade.
 
-Com 2 dormitórios e capacidade para até 5 pessoas, é ideal para famílias ou pequenos grupos que desejam ficar perto de tudo: restaurantes, comércios, lojas e do mar. `,
+      Localizado na avenida principal, a apenas 50 metros da Praia de Bombinhas e sobre a tradicional Sorveteria Seu João, o apartamento possui dois dormitórios climatizados e acomoda até 05 pessoas.
+
+      Conta com cozinha, sala, banheiro, churrasqueira, lavanderia individual e Wi-Fi, oferece toda praticidade necessária para aproveitar as férias em família.
+
+      Por estar no centro, fica próximo a mercado, restaurantes, lojas e todo comércio em geral.
+
+      A acomodação também conta com garagem fechada e segura, localizada a aproximadamente 400 metros do apartamento, no residencial Varandas do Sol.
+        `,
       finds: [
         { text: "2 dormitórios climatizados", icon: "fa-solid fa-bed", color: "color-1" },
         { text: "Cozinha equipada", icon: "fa-solid fa-utensils", color: "color-2" },
@@ -130,9 +146,7 @@ Com 2 dormitórios e capacidade para até 5 pessoas, é ideal para famílias ou 
         { text: "Garagem fechada", icon: "fa-solid fa-square-parking", color: "color-1" },
         { text: "Lavanderia individual", icon: "fa-solid fa-shirt", color: "color-1" }
       ],
-      description2: `A acomodação conta ainda com garagem fechada e segura, localizada a 400 metros do apartamento, em outro imóvel da família, no residencial Varandas do sol Bombinhas.
-
-Perfeito para quem busca comodidade, excelente localização e dias inesquecíveis em Bombinhas. `,
+      description2: ``,
       location: "Av. Vereador Manoel José dos Santos, 1107 - Centro",
       cords: {
         lat: "-27.149445339353658",
@@ -166,9 +180,12 @@ Perfeito para quem busca comodidade, excelente localização e dias inesquecíve
         bathrooms: 1,
         peoples: 3
       },
-      description1: `Localizado na avenida principal de Bombinhas, em cima da tradicional Sorveteria Seu João, o Apartamento Doce Sol oferece praticidade, conforto e uma experiência única a apenas 50 metros da praia.
+      description1: `Uma opção compacta, confortável e bem localizada, ideal para casais ou pequenas famílias.
 
-Com 2 dormitórios e capacidade para até 6 pessoas, é ideal para famílias ou pequenos grupos que desejam ficar perto de tudo: restaurantes, comércios, lojas e do mar. `,
+      O apartamento 01 está localizado no Residencial Férias em Bombinhas, no centro a aproximadamente 300 metros da Praia de Bombinhas e 450 metros da Praia de Quatro Ilhas.
+
+      Com 01 dormitório e capacidade para até 03 pessoas, oferece um ambiente aconchegante, com cozinha equipada, sala com sofá cama, banheiro, Wi-Fi e estacionamento.
+      `,
       finds: [
         { text: "Dormitório climatizado", icon: "fa-solid fa-bed", color: "color-1" },
         { text: "Cozinha equipada", icon: "fa-solid fa-utensils", color: "color-2" },
@@ -177,7 +194,7 @@ Com 2 dormitórios e capacidade para até 6 pessoas, é ideal para famílias ou 
         { text: "Churrasqueira", icon: "fa-solid fa-fire", color: "color-2" },
         { text: "Estacionamento fechado", icon: "fa-solid fa-square-parking", color: "color-1" }
       ],
-      description2: `Uma opção charmosa e bem localizada para quem deseja aproveitar Bombinhas com tranquilidade e comodidade. `,
+      description2: ``,
       location: "Rua Salema n 242 – Centro",
       cords: {
         lat: "-27.151051035359348",
@@ -207,21 +224,22 @@ Com 2 dormitórios e capacidade para até 6 pessoas, é ideal para famílias ou 
         bathrooms: 2,
         peoples: 7
       },
-      description1: `Lindo apartamento duplex de dois dormitórios, localizado no centro de Bombinhas, a apenas 300 metros da Praia de Bombinhas e 450 metros da Praia de 4 Ilhas.
+      description1: `Espaçoso e ideal para famílias maiores, o Duplex 02 acomoda até 07 pessoas e oferece conforto em dois pavimentos.
 
-Com capacidade para até 7 pessoas, oferece ambientes amplos, confortáveis e muito bem distribuídos.
+      Localizado no centro, no residencial Férias em Bombinhas, a 300 metros da praia de Bombinhas e a 450 metros da praia de Quatro Ilhas. O apartamento possui 02 dormitórios climatizados, sendo um deles uma suíte com hidromassagem. No térreo, os ambientes são amplos e bem distribuídos, com sala, cozinha e lavabo. O residencial oferece Wi-Fi, estacionamento, lavanderia de uso comum e churrasqueira de uso coletivo.
 
-No térreo, o apartamento conta com sala espaçosa, lavabo, e cozinha completa e equipada com utensílios. Na parte externa, nos fundos, há churrasqueira de uso coletivo, ideal para reunir a família.  `,
+      Uma excelente opção para quem deseja espaço, conforto e uma ótima localização em Bombinhas.
+      `,
       finds: [
         { text: "2 dormitórios", icon: "fa-solid fa-bed", color: "color-1" },
-        { text: "Cozinha completa", icon: "fa-solid fa-utensils", color: "color-2" },
+        { text: "Cozinha equipada", icon: "fa-solid fa-utensils", color: "color-2" },
         { text: "Hidromassagem", icon: "fa-solid fa-hot-tub-person", color: "color-3" },
         { text: "Wi-Fi", icon: "fa-solid fa-wifi", color: "color-3" },
         { text: "Churrasqueira coletiva", icon: "fa-solid fa-fire", color: "color-2" },
         { text: "Estacionamento", icon: "fa-solid fa-square-parking", color: "color-1" },
         { text: "Lavanderia de uso comum", icon: "fa-solid fa-shirt", color: "color-1" }
       ],
-      description2: `Uma excelente opção para quem deseja espaço, conforto e uma ótima localização em Bombinhas. `,
+      description2: ``,
       location: "Rua Salema n 242 - Centro",
       cords: {
         lat: "-27.151051035359348",
@@ -262,21 +280,22 @@ No térreo, o apartamento conta com sala espaçosa, lavabo, e cozinha completa e
         bathrooms: 1,
         peoples: 6
       },
-      description1: `Apartamentos duplex de dois dormitórios, localizados no centro de Bombinhas, a apenas 300 metros da Praia de Bombinhas e 450 metros da Praia de 4 Ilhas.
+      description1: `Os Duplex 03 e 04 estão localizados no centro de Bombinhas, a 300 metros da Praia de Bombinhas e 450 metros da Praia de Quatro Ilhas.
 
-Com capacidade para até 6 pessoas, os duplex oferecem ambientes amplos e bem distribuídos.
+      Distribuídos em dois pavimentos, cada unidade conta com sala espaçosa, cozinha, lavabo, 02 dormitórios e banheiro. O residencial oferece Wi-Fi, estacionamento, lavanderia de uso comum e churrasqueira de uso coletivo.
 
-No térreo, o hóspede conta com sala espaçosa, lavabo, e cozinha completa e equipada com utensílios. Nos fundos, há churrasqueira externa de uso coletivo, perfeita para momentos em família. `,
+      Uma excelente opção para quem deseja espaço, conforto e uma ótima localização em Bombinhas.
+      `,
       finds: [
         { text: "2 dormitórios", icon: "fa-solid fa-bed", color: "color-1" },
         { text: "1 banheiro e 1 lavabo", icon: "fa-solid fa-bath", color: "color-1" },
-        { text: "Cozinha completa", icon: "fa-solid fa-utensils", color: "color-2" },
+        { text: "Cozinha equipada", icon: "fa-solid fa-utensils", color: "color-2" },
         { text: "Wi-Fi", icon: "fa-solid fa-wifi", color: "color-3" },
         { text: "Churrasqueira coletiva", icon: "fa-solid fa-fire", color: "color-2" },
         { text: "Estacionamento", icon: "fa-solid fa-square-parking", color: "color-1" },
         { text: "Lavanderia de uso comum", icon: "fa-solid fa-shirt", color: "color-1" }
       ],
-      description2: `Uma opção ampla, prática e bem localizada para quem deseja aproveitar Bombinhas com conforto. `,
+      description2: ``,
       location: "Rua Salema n 242 - Centro",
       cords: {
         lat: "-27.151051035359348",
@@ -314,9 +333,16 @@ No térreo, o hóspede conta com sala espaçosa, lavabo, e cozinha completa e eq
         bathrooms: 2,
         peoples: 6
       },
-      description1: `Apartamentos de dois dormitórios, um no primeiro andar e outro no segundo, localizados no centro de Bombinhas e a apenas 300 metros da Praia de Bombinhas e 450 metros da Praia de 4 Ilhas.
+      description1: `Os apartamentos 101e 201 estão localizados no centro de Bombinhas, a 300 metros da Praia de Bombinhas e 450 metros da Praia de Quatro Ilhas.
 
-Cada unidade acomoda até 6 pessoas e oferece ambientes amplos e confortáveis, com cozinha equipada, sala integrada e varanda com churrasqueira, ideal para momentos em família. `,
+      Cada unidade possui 02 dormitórios, sendo uma suíte e um banheiro social, apartamentos com capacidade para até 06 pessoas.
+
+      A sala integrada à cozinha proporciona um ambiente agradável para família, e a varanda com churrasqueira privativa é um dos grandes diferenciais do apartamento.
+
+      As acomodações contam com Wi-Fi, estacionamento e lavanderia de uso comum.
+
+      Uma excelente opção para quem deseja espaço, conforto e uma ótima localização em Bombinhas.
+      `,
       finds: [
         { text: "1 suíte", icon: "fa-solid fa-bed", color: "color-3" },
         { text: "2 dormitórios", icon: "fa-solid fa-bed", color: "color-1" },
@@ -326,7 +352,7 @@ Cada unidade acomoda até 6 pessoas e oferece ambientes amplos e confortáveis, 
         { text: "Estacionamento", icon: "fa-solid fa-square-parking", color: "color-1" },
         { text: "Lavanderia de uso comum", icon: "fa-solid fa-shirt", color: "color-1" }
       ],
-      description2: `Uma opção completa, prática e muito bem localizada para quem deseja aproveitar o melhor de Bombinhas com conforto e tranquilidade. `,
+      description2: ``,
       location: "Rua Salema n 242 - Centro",
       cords: {
         lat: "-27.151051035359348",
