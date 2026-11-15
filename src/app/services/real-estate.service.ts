@@ -376,6 +376,109 @@ export class RealEstateService {
         'assets/real-estages_imgs/apartamento_101_ou_201/img15.webp',
         'assets/real-estages_imgs/apartamento_101_ou_201/img16.webp'
       ]
+    },
+    {
+      id: 8,
+      name: "Residencial Soles - Apartamentos de 01 dormitório",
+      slug: "residencial-soles-apartamentos-01-dormitorio",
+      imgCapa: 'assets/real-estages_imgs/residencial_soles/img1.webp',
+      details: {
+        local: "Centro",
+        rooms: 1,
+        bathrooms: 1,
+        peoples: 3
+      },
+      description1: `Apartamentos térreos aconchegantes, ideais para casais ou pequenas famílias, com capacidade para até 03 pessoas.
+
+      Localizados no centro de Bombinhas, ficam próximos a mercado, restaurantes e ao comércio em geral. Estão a poucos metros da avenida principal e a cerca de 100 metros da Praia de Bombinhas.
+
+      São 02 unidades, cada uma com 01 dormitório, sala e cozinha conjugadas, banheiro e churrasqueira privativa.
+
+      Uma ótima opção para quem busca praticidade e uma estadia tranquila perto da praia.`,
+      finds: [
+        { text: "1 dormitório", icon: "fa-solid fa-bed", color: "color-1" },
+        { text: "Cozinha equipada", icon: "fa-solid fa-utensils", color: "color-2" },
+        { text: "Wi-Fi", icon: "fa-solid fa-wifi", color: "color-3" },
+        { text: "Churrasqueira privativa", icon: "fa-solid fa-fire", color: "color-2" },
+        { text: "Estacionamento", icon: "fa-solid fa-square-parking", color: "color-1" },
+        { text: "Lavanderia de uso comum", icon: "fa-solid fa-shirt", color: "color-1" }
+      ],
+      description2: ``,
+      location: "Rua Salema, 35 - Centro",
+      cords: {
+        lat: "-27.1495148",
+        lon: "-48.484268"
+      },
+      images: [
+        'assets/real-estages_imgs/residencial_soles/img1.webp',
+        'assets/real-estages_imgs/residencial_soles/img2.webp',
+        'assets/real-estages_imgs/residencial_soles/img3.webp',
+        'assets/real-estages_imgs/residencial_soles/img4.webp',
+        'assets/real-estages_imgs/residencial_soles/img5.webp',
+        'assets/real-estages_imgs/residencial_soles/img6.webp',
+        'assets/real-estages_imgs/residencial_soles/img7.webp',
+        'assets/real-estages_imgs/residencial_soles/img8.webp',
+        'assets/real-estages_imgs/residencial_soles/img9.webp',
+        'assets/real-estages_imgs/residencial_soles/img10.webp',
+        'assets/real-estages_imgs/residencial_soles/img11.webp',
+        'assets/real-estages_imgs/residencial_soles/img12.webp',
+        'assets/real-estages_imgs/residencial_soles/img13.webp',
+        'assets/real-estages_imgs/residencial_soles/img14.webp',
+        'assets/real-estages_imgs/residencial_soles/img15.webp',
+        'assets/real-estages_imgs/residencial_soles/img16.webp'
+      ]
+    },
+    {
+      id: 9,
+      name: "Residencial Soles - Apartamentos de dois dormitórios",
+      slug: "residencial-soles-apartamentos-2-dormitorios",
+      imgCapa: 'assets/real-estages_imgs/residencial_soles_2_dormitorios/img13.webp',
+      details: {
+        local: "Centro",
+        rooms: 2,
+        bathrooms: 2,
+        peoples: 6
+      },
+      description1: `Apartamentos confortáveis com capacidade para até 06 pessoas, localizados no centro de Bombinhas, próximos a mercado, restaurantes e ao comércio em geral. Estão a poucos metros da avenida principal e a cerca de 100 metros da Praia de Bombinhas.
+
+      O Residencial Soles possui 04 unidades desta categoria: 101 e 102, no primeiro andar, e 201 e 202, no segundo andar.
+
+      Cada apartamento conta com 02 dormitórios, sendo uma suíte, sala e cozinha integradas, banheiro social e varanda com churrasqueira privativa, proporcionando mais conforto e praticidade.`,
+      finds: [
+        { text: "2 dormitórios, sendo 1 suíte", icon: "fa-solid fa-bed", color: "color-1" },
+        { text: "Cozinha equipada", icon: "fa-solid fa-utensils", color: "color-2" },
+        { text: "Wi-Fi", icon: "fa-solid fa-wifi", color: "color-3" },
+        { text: "Varanda com churrasqueira", icon: "fa-solid fa-fire", color: "color-2" },
+        { text: "Estacionamento", icon: "fa-solid fa-square-parking", color: "color-1" },
+        { text: "Lavanderia de uso comum", icon: "fa-solid fa-shirt", color: "color-1" }
+      ],
+      description2: ``,
+      location: "Rua Salema, 35 - Centro",
+      cords: {
+        lat: "-27.1495148",
+        lon: "-48.484268"
+      },
+      images: [
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img1.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img2.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img3.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img4.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img5.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img6.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img7.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img8.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img9.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img10.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img11.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img12.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img13.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img14.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img15.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img16.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img17.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img18.webp',
+        'assets/real-estages_imgs/residencial_soles_2_dormitorios/img19.webp'
+      ]
     }
   ];
 

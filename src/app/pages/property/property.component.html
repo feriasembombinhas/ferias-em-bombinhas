@@ -1,3 +1,4 @@
-<app-carousel [images]="realEstate?.images" [updateItemPerSlide]="true" [zoom]="false" [blur]="true"></app-carousel>
+<app-carousel [images]="realEstate?.images" [updateItemPerSlide]="true" [zoom]="false" [blur]="true"
+  [lightbox]="true" [imageAltPrefix]="realEstate?.name || 'imóvel para temporada em Bombinhas'"></app-carousel>
 <app-property-content [realEstate]="realEstate"></app-property-content>
 

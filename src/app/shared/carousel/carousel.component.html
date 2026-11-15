@@ -12,19 +12,24 @@
 
       <div class="d-flex">
 
-        <div *ngFor="let image of group" class="flex-fill p-1">
+        <div *ngFor="let image of group; let photoIndex = index" class="flex-fill p-1">
           <div class="img-wrapper">
 
             <!-- Fundo borrado -->
-            <div *ngIf="blur" class="img-bg" [ngStyle]="{ 'background-image': 'url(' + image + ')' }">
+            <div *ngIf="blur" class="img-bg" aria-hidden="true"
+              [ngStyle]="{ 'background-image': 'url(' + image + ')' }">
             </div>
 
             <!-- Imagem -->
-            <img [src]="image" class="img-front" fetchpriority="high" priority [ngClass]="{
-              'animation-zoom': zoom,
-              'img-cover': !blur,
-              'img-contain': blur
-            }" />
+            <button type="button" class="image-trigger" [disabled]="!lightbox"
+              (click)="openImage(image, i * itemsPerSlide + photoIndex)"
+              [attr.aria-label]="'Ampliar ' + getImageAlt(i * itemsPerSlide + photoIndex)">
+              <img [src]="image" class="img-front" fetchpriority="high" priority [ngClass]="{
+                'animation-zoom': zoom,
+                'img-cover': !blur,
+                'img-contain': blur
+              }" [attr.alt]="getImageAlt(i * itemsPerSlide + photoIndex)" />
+            </button>
 
           </div>
         </div>
@@ -42,4 +47,31 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 
+</div>
+
+<div *ngIf="lightbox && selectedImage" class="image-lightbox" (click)="closeImage()"
+  (wheel)="onImageWheel($event)" role="presentation">
+  <section class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Imagem ampliada do imóvel"
+    (click)="$event.stopPropagation()">
+    <button type="button" class="lightbox-close" aria-label="Fechar imagem ampliada" (click)="closeImage()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="lightbox-stage">
+      <img [src]="selectedImage" [attr.alt]="selectedImageAlt"
+        [style.transform]="'scale(' + zoomLevel + ')'" />
+    </div>
+
+    <div class="lightbox-controls" aria-label="Controles de zoom">
+      <button type="button" aria-label="Diminuir zoom" (click)="zoomOut()" [disabled]="zoomLevel <= 1">
+        <i class="fa-solid fa-minus"></i>
+      </button>
+      <span>{{ zoomLevel * 100 | number:'1.0-0' }}%</span>
+      <button type="button" aria-label="Aumentar zoom" (click)="zoomIn()" [disabled]="zoomLevel >= 4">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <button type="button" aria-label="Redefinir zoom" (click)="resetZoom()">Redefinir</button>
+    </div>
+    <p class="lightbox-hint">Use a roda do mouse ou os botões para ampliar. Pressione Esc para fechar.</p>
+  </section>
 </div>

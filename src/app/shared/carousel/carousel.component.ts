@@ -1,5 +1,5 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { Component, Inject, Input, OnInit, PLATFORM_ID } from '@angular/core';
+import { Component, HostListener, Inject, Input, OnInit, PLATFORM_ID } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -13,6 +13,12 @@ export class CarouselComponent implements OnInit {
   @Input() zoom: boolean = true;
   @Input() images: Array<string> | undefined = [''];
   @Input() blur: boolean = false;
+  @Input() lightbox: boolean = false;
+  @Input() imageAltPrefix = 'Paisagem de Bombinhas, Santa Catarina';
+
+  selectedImage: string | null = null;
+  selectedImageAlt: string | null = null;
+  zoomLevel = 1;
 
   itemsPerSlide = 1;
 
@@ -57,6 +63,56 @@ export class CarouselComponent implements OnInit {
       this.itemsPerSlide = 2;
     } else {
       this.itemsPerSlide = 3;
+    }
+  }
+
+  openImage(image: string, index: number): void {
+    if (!this.lightbox) return;
+
+    this.selectedImage = image;
+    this.selectedImageAlt = this.getImageAlt(index);
+    this.zoomLevel = 1;
+  }
+
+  closeImage(): void {
+    this.selectedImage = null;
+    this.selectedImageAlt = null;
+    this.zoomLevel = 1;
+  }
+
+  getImageAlt(index: number): string {
+    return `Foto ${index + 1} de ${this.imageAltPrefix}`;
+  }
+
+  zoomIn(): void {
+    this.zoomLevel = Math.min(4, this.zoomLevel + 0.25);
+  }
+
+  zoomOut(): void {
+    this.zoomLevel = Math.max(1, this.zoomLevel - 0.25);
+  }
+
+  resetZoom(): void {
+    this.zoomLevel = 1;
+  }
+
+  onImageWheel(event: WheelEvent): void {
+    event.preventDefault();
+    event.deltaY < 0 ? this.zoomIn() : this.zoomOut();
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  onDocumentKeydown(event: KeyboardEvent): void {
+    if (!this.selectedImage) return;
+
+    if (event.key === 'Escape') {
+      this.closeImage();
+    } else if (event.key === '+' || event.key === '=') {
+      this.zoomIn();
+    } else if (event.key === '-') {
+      this.zoomOut();
+    } else if (event.key === '0') {
+      this.resetZoom();
     }
   }
 }
