@@ -37,9 +37,9 @@
 
             <div class="icon-data">
               <i class="fa-solid fa-bath"></i>
-              {{ item.details.bathrooms > 1
-                ? item.details.bathrooms + ' banheiros'
-                : item.details.bathrooms + ' banheiro' }}
+              {{ item.details.bathrooms }}&nbsp;{{ item.details.bathrooms > 1
+                ? 'banheiros'
+                : 'banheiro' }}
             </div>
 
             <div class="icon-data">

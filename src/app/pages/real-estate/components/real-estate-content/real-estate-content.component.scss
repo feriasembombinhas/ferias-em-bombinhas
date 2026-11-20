@@ -95,6 +95,7 @@ h1 {
           i::before {
             color: $blue-3 !important;
           }
+
         }
       }
     }
@@ -289,9 +290,11 @@ h1 {
         padding: 12px;
 
         .icons-card {
-          width: 100%;
-          grid-template-columns: repeat(auto-fit, minmax(105px, 100px));
-          gap: 10px;
+          width: fit-content;
+          max-width: 100%;
+          grid-template-columns: repeat(2, max-content);
+          gap: 10px 24px;
+          margin-inline: auto;
         }
       }
     }
